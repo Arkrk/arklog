@@ -11,6 +11,7 @@ content:
       fields: [ title, pubDate ]
       default:
         sort: pubDate
+        order: desc
     fields:
       - { name: title, label: タイトル, type: string, required: true }
       - { name: pubDate, label: 公開日, type: date, required: true }
