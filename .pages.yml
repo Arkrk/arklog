@@ -9,6 +9,8 @@ content:
     path: src/content/blog
     view:
       fields: [ title, pubDate ]
+      default:
+        sort: pubDate
     fields:
       - { name: title, label: タイトル, type: string, required: true }
       - { name: pubDate, label: 公開日, type: date, required: true }
