@@ -1,0 +1,19 @@
+media:
+  input: src/assets
+  output: /
+  label: メディア
+content:
+  - name: posts
+    label: 記事
+    type: collection
+    path: src/content/blog
+    view:
+      fields: [ title, pubDate ]
+    fields:
+      - { name: title, label: タイトル, type: string, required: true }
+      - { name: pubDate, label: 公開日, type: date, required: true }
+      - { name: updateDate, label: 更新日, type: date }
+      - { name: ogImage, label: OGP画像, type: string }
+      - { name: slug, label: Slug, type: string }
+      - { name: description, label: 説明, type: string }
+      - { name: body, label: 本文, type: rich-text }
